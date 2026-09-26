@@ -1,70 +1,33 @@
-<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="index,follow"><meta name="description" content="Solicita la eliminación de tu cuenta y de los datos asociados en Asistente Familiar — Cuida de tus mayores, de AiLugia."><title>Eliminar cuenta — Asistente Familiar — AiLugia</title><link rel="stylesheet" href="style.css"></head><body><header class="site-header"><div class="header-inner"><div class="brand"><span class="brand-mark">A</span>AiLugia</div><div class="hero"><h1>Asistente Familiar</h1><p>Cuida de tus mayores · Documentación legal oficial de la aplicación.</p><nav class="nav"><a href="index.html">Inicio</a><a href="privacidad.html">Privacidad</a><a href="terminos.html">Términos</a><a href="eliminar-cuenta.html">Eliminar cuenta</a></nav></div></div></header>
-<main class="container"><article class="doc"><header class="doc-head"><div class="eyebrow">AiLugia</div><h1>ELIMINAR CUENTA</h1><p class="subtitle">ASISTENTE FAMILIAR — CUIDA DE TUS MAYORES</p></header>
-<p>Esta página explica cómo solicitar la eliminación de tu cuenta y de los datos asociados en la aplicación <strong>Asistente Familiar — Cuida de tus mayores</strong>, desarrollada y operada bajo la marca <strong>AiLugia</strong> (paquete <code>com.jose.asistentefamiliar</code>).</p>
-
-<div class="aviso"><p><strong>Puedes solicitarlo aunque ya no tengas la aplicación instalada.</strong> No necesitas volver a instalarla ni volver a iniciar sesión: basta con enviarnos un correo desde esta misma página.</p></div>
-
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="index,follow"><meta name="description" content="Cómo solicitar la eliminación de tu cuenta y datos en Organlify."><title>Eliminar cuenta — AiLugia</title><link rel="stylesheet" href="style.css"></head>
+<body><header class="site-header"><div class="header-inner"><div class="brand"><span class="brand-mark">A</span>AiLugia</div><div class="hero"><h1>Organlify</h1><p>Organiza tu día · Documentación legal oficial de la aplicación.</p><nav class="nav"><a href="index.html">Inicio</a><a href="privacidad.html">Privacidad</a><a href="terminos.html">Términos</a><a href="eliminar-cuenta.html">Eliminar cuenta</a></nav></div></div></header>
+<main class="container"><article class="doc"><header class="doc-head"><div class="eyebrow">AiLugia</div><h1>ELIMINAR CUENTA</h1><p class="subtitle">ORGANLIFY</p></header>
+<p>Última actualización: 25 de septiembre de 2026</p>
 <section><h2>1. QUÉ PUEDES SOLICITAR</h2>
 <p>Puedes solicitar la eliminación de tu cuenta y de los datos asociados a ella.</p>
 <p>Cuando la solicitud se lleva a cabo, el proceso realiza estos pasos:</p>
-<ul>
-<li>se deshacen las vinculaciones familiares de la cuenta, de modo que quien te ayudaba deja de tener acceso;</li>
-<li>se eliminan los datos propios de la cuenta almacenados en Firestore;</li>
-<li>se eliminan los códigos de invitación propios;</li>
-<li>se elimina el perfil de usuario;</li>
-<li>se elimina la cuenta de autenticación;</li>
-<li>se limpian los datos locales de la aplicación en el dispositivo.</li>
-</ul>
-<p>Queremos ser claros sobre el alcance: eliminamos los datos propios de tu cuenta, pero no podemos garantizar la desaparición de cualquier copia existente en infraestructuras que no controlamos directamente. Por ejemplo, las copias de seguridad de la infraestructura de Firebase y Google se rigen por sus propios plazos, y pueden quedar determinados datos residuales asociados a otras cuentas de usuario. También puede existir una obligación legal de conservación en casos concretos.</p>
+<ul><li>se eliminan los datos propios de la cuenta almacenados en Firestore (users/{uid}/appData);</li><li>se elimina el perfil de usuario (users/{uid});</li><li>se elimina la cuenta de autenticación de Firebase Authentication;</li><li>se cierra la sesión y se limpian los datos locales de la aplicación en el dispositivo.</li></ul>
+<p>Queremos ser claros sobre el alcance: eliminamos los datos propios de tu cuenta, pero no podemos garantizar la desaparición de cualquier copia existente en infraestructuras que no controlamos directamente. Por ejemplo, las copias de seguridad de la infraestructura de Firebase y Google se rigen por sus propios plazos. También puede existir una obligación legal de conservación en casos concretos.</p>
+<p>Además, determinadas marcas técnicas propias del dispositivo pueden permanecer en el teléfono tras cerrar sesión o eliminar la cuenta, concretamente las relacionadas con la aceptación de los documentos legales y su versión y fecha de aceptación. Estas marcas no identifican directamente a la persona.</p>
 </section>
-
 <section><h2>2. OPCIÓN A · DESDE LA APLICACIÓN</h2>
 <p>Si todavía tienes la aplicación instalada y puedes iniciar sesión, esta es la vía más directa:</p>
-<ol class="pasos">
-<li>Abre <strong>Asistente Familiar</strong> e inicia sesión con tu cuenta.</li>
-<li>Entra en <strong>Ajustes</strong>.</li>
-<li>Pulsa en <strong>Eliminar mi cuenta</strong>.</li>
-<li>Por seguridad, la aplicación te pedirá que confirmes tu identidad escribiendo tu contraseña o volviendo a elegir tu cuenta de Google.</li>
-<li>Confirma la eliminación.</li>
-</ol>
+<ul><li>Abre Organlify e inicia sesión con tu cuenta.</li><li>Entra en Ajustes.</li><li>Pulsa en Eliminar mi cuenta.</li><li>Por seguridad, la aplicación te pedirá que confirmes tu identidad escribiendo tu contraseña o volviendo a elegir tu cuenta de Google.</li><li>Confirma la eliminación.</li></ul>
 <p>La aplicación te informará en pantalla cuando el proceso haya terminado. Si algo falla durante el proceso, la cuenta no se elimina y podrás volver a intentarlo.</p>
 </section>
-
 <section><h2>3. OPCIÓN B · POR CORREO ELECTRÓNICO</h2>
-<p>Si ya no tienes la aplicación instalada, no puedes acceder a tu cuenta o prefieres hacerlo por escrito, puedes iniciar la solicitud desde aquí:</p>
-<p><a class="accion" href="mailto:ailugia0298@gmail.com?subject=Solicitud%20de%20eliminaci%C3%B3n%20de%20cuenta%20%E2%80%94%20Asistente%20Familiar&amp;body=Hola%2C%0A%0ASolicito%20la%20eliminaci%C3%B3n%20de%20mi%20cuenta%20y%20de%20los%20datos%20asociados%20en%20la%20aplicaci%C3%B3n%20Asistente%20Familiar%20%E2%80%94%20Cuida%20de%20tus%20mayores.%0A%0ACorreo%20electr%C3%B3nico%20asociado%20a%20mi%20cuenta%3A%20%0A%0A(No%20incluyas%20tu%20contrase%C3%B1a%20en%20este%20mensaje.)%0A%0AGracias.">Solicitar la eliminación por correo</a></p>
-<p>El botón abre tu aplicación de correo con el asunto y un texto ya preparados. Solo tienes que completar el correo electrónico de tu cuenta y enviarlo.</p>
-<p>Si el botón no funciona en tu dispositivo, puedes escribirnos directamente a <a href="mailto:ailugia0298@gmail.com">ailugia0298@gmail.com</a> con el asunto «Solicitud de eliminación de cuenta — Asistente Familiar».</p>
+<p>Si ya no tienes la aplicación instalada, no puedes acceder a tu cuenta o prefieres hacerlo por escrito, puedes iniciar la solicitud enviando un correo electrónico a <a href="mailto:ailugia0298@gmail.com">ailugia0298@gmail.com</a> desde la dirección asociada a tu cuenta.</p>
 </section>
-
 <section><h2>4. QUÉ INFORMACIÓN DEBES INCLUIR</h2>
-<p>Para poder identificar tu cuenta necesitamos únicamente:</p>
-<ul>
-<li>el <strong>correo electrónico asociado a tu cuenta</strong> de Asistente Familiar.</li>
-</ul>
-<p>Con eso es suficiente. Si escribes desde ese mismo correo electrónico, la identificación es más sencilla.</p>
-<div class="aviso"><p><strong>No nos envíes nunca tu contraseña.</strong> No la necesitamos y no te la pediremos en ningún momento. Tampoco te pediremos datos de salud, documentos, datos bancarios ni ninguna otra información personal que no sea necesaria para localizar tu cuenta.</p></div>
+<p>Para poder localizar tu cuenta y tramitar la solicitud, indica en el correo el correo electrónico asociado a tu cuenta y, si lo deseas, una breve descripción de la solicitud. No incluyas tu contraseña en el correo.</p>
 </section>
-
 <section><h2>5. QUÉ OCURRE DESPUÉS</h2>
-<p>La solicitud se gestiona de forma manual a través de la dirección <a href="mailto:ailugia0298@gmail.com">ailugia0298@gmail.com</a>. El procedimiento es el siguiente:</p>
-<ol class="pasos">
-<li>Recibimos tu solicitud.</li>
-<li>Comprobamos que la petición procede de la persona titular de la cuenta. Si es necesario, te escribiremos al correo asociado para confirmarlo.</li>
-<li>Procedemos a eliminar la cuenta y los datos asociados que puedan eliminarse.</li>
-<li>Te respondemos al mismo correo para confirmarte que se ha completado.</li>
-</ol>
-<p>Como se trata de un proceso revisado de forma manual, la eliminación no es inmediata. Atenderemos tu solicitud lo antes posible y te mantendremos informado por correo electrónico. Si tienes cualquier duda mientras tanto, puedes responder a ese mismo mensaje.</p>
+<p>Una vez verificada la solicitud, se procederá a eliminar la cuenta y los datos asociados que puedan eliminarse técnicamente, conforme a lo descrito en el apartado 1. Te confirmaremos por correo cuando el proceso se haya completado.</p>
 </section>
-
 <section><h2>6. OTRAS OPCIONES</h2>
-<p>Cerrar sesión no elimina tu cuenta: los datos guardados en la nube siguen asociados a ella y podrás volver a iniciar sesión más adelante.</p>
-<p>Si lo que quieres es dejar de compartir información con un familiar o cuidador, no hace falta eliminar la cuenta: puedes retirarle el acceso desde la propia aplicación, en cualquier momento.</p>
-<p>Puedes consultar el detalle del tratamiento de datos en la <a href="privacidad.html">Política de Privacidad</a> y las condiciones de uso en los <a href="terminos.html">Términos y Condiciones</a>.</p>
+<p>Si solo deseas dejar de utilizar la aplicación sin eliminar la cuenta, puedes cerrar sesión o desinstalar la aplicación; en ese caso, los datos locales de la aplicación pueden eliminarse del dispositivo, mientras que la información asociada a la cuenta permanecerá hasta que solicites su eliminación.</p>
 </section>
-
 <section><h2>7. CONTACTO</h2>
-<p>Para cualquier consulta relacionada con la eliminación de tu cuenta:</p>
-<p>AiLugia<br>Email: <a href="mailto:ailugia0298@gmail.com">ailugia0298@gmail.com</a><br>España</p>
+<p>AiLugia · Email: <a href="mailto:ailugia0298@gmail.com">ailugia0298@gmail.com</a> · España</p>
 </section>
-</article></main><footer class="footer"><div class="footer-inner"><span>© 2026 AiLugia</span><span><a href="mailto:ailugia0298@gmail.com">ailugia0298@gmail.com</a> · España</span></div></footer></body></html>
+</article></main>
+<footer class="footer"><div class="footer-inner"><span>© 2026 AiLugia</span><span><a href="mailto:ailugia0298@gmail.com">ailugia0298@gmail.com</a> · España</span></div></footer></body></html>
